@@ -4,3 +4,36 @@
 @import "mixins.scss";
 @import "normalize.scss";
 @import "common.scss";
+
+@import "blocks/humburger.scss";
+@import "header/header.scss";
+@import "header/nav-header.scss";
+
+@import "sections/intro/intro.scss";
+
+@import "blocks/thumb.scss";
+@import "sections/cakes/cakes.scss";
+
+@import "blocks/dots.scss";
+@import "sections/order/order.scss";
+@import "sections/order/filling.scss";
+@import "sections/order/size.scss";
+@import "sections/order/appearence.scss";
+@import "sections/order/order-form.scss";
+
+@import "sections/review/review.scss";
+
+@import "blocks/social.scss";
+@import "sections/info/info.scss";
+
+@import "sections/advantages/advantages.scss";
+
+@import "sections/care/care.scss";
+
+@import "sections/faq/faq.scss";
+
+@import "sections/contacts/contacts.scss";
+@import "sections/contacts/contacts-form.scss";
+
+@import "footer/footer.scss";
+@import "footer/footer-nav.scss";
