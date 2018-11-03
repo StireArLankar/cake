@@ -1,0 +1,65 @@
+.appearence {
+  position: relative;
+  background-color: $white-color;
+  padding-bottom: 25px;
+}
+
+.appearence__slider {
+  @include list;
+  display: flex;
+  overflow: hidden;
+  text-align: center;
+}
+
+.appearence__item {
+  flex-shrink: 0;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 27px;
+}
+
+.appearence__img-wrapper {
+  width: 170px;
+  height: 196px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+}
+
+.appearence__title {
+  @include text(14px, 700);
+  margin: 33px 0 0;
+}
+
+.appearence__price {
+  @include title(22px, 0);
+  text-align: center;
+  margin: 0;
+}
+
+.appearence__number {
+  @include text(12px);
+  color: $black-color;
+  position: absolute;
+  top: 230px;
+  right: 62px;
+}
+
+.appearence__dots {
+  position: absolute;
+  top: 270px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.appearence__choose {
+  text-align: center;
+  min-width: 179px;
+  margin: 31px auto 0;
+}

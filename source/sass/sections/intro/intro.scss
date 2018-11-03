@@ -1,0 +1,39 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 167px $padding-mobile 0;
+}
+
+.intro__title {
+  @include title(40px, 0.075em);
+  line-height: 36px;
+  padding: 0 55px;
+  margin: 0;
+}
+
+.intro__tagline {
+  @include tagline(22px);
+  margin-top: 20px;
+}
+
+.intro__list {
+  @include list;
+  margin-top: 20px;
+}
+
+.intro__item {
+  @include text(14px);
+  padding-left: 40px;
+  padding-right: 30px;
+  text-align: left;
+  min-height: 35px;
+  margin-bottom: 8px;
+}
+
+.intro__btn {
+  margin-top: 31px;
+  min-width: 225px;
+}

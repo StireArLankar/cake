@@ -1,0 +1,38 @@
+.order-form {
+  background-color: $white-color;
+  padding: 11px 23px 33px 20px;
+}
+
+.order-form__title {
+  @include title(27px, 0);
+  margin: 0;
+  text-align: left;
+}
+
+.order-form__label {
+  margin-top: 13px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.order-form__label-title {
+  @include tagline(21px);
+  color: $red-color;
+  margin: 0;
+  padding-right: 15px;
+}
+
+.order-form__input {
+  border-radius: 15px;
+  border: 1px solid $light-grey;
+  background-color: transparent;
+  padding: 3px 10px;
+  margin-left: -6px;
+}
+
+.order-form__submit {
+  text-align: center;
+  min-width: 226px;
+  margin: 29px auto 0;
+}

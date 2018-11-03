@@ -1,0 +1,15 @@
+.header {
+  background-color: $white-color;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.header__logo-wrapper {
+  height: 40px;
+}
+
+.header__phone {
+  display: none;
+}

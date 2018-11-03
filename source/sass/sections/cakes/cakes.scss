@@ -1,0 +1,24 @@
+.cakes {
+  align-items: center;
+  text-align: center;
+  padding: 42px $padding-mobile 0;
+}
+
+.cakes__title {
+  @include title(30px, 0);
+  margin: 0;
+}
+
+.cakes__list {
+  @include list;
+  margin-top: 33px;
+}
+
+.cakes__item {
+  display: flex;
+  margin-top: 10px;
+}
+
+.cakes__item > * {
+  flex-grow: 1;
+}

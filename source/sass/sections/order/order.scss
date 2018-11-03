@@ -1,0 +1,47 @@
+.order {
+  align-items: center;
+  text-align: center;
+  padding: 43px $padding-mobile 0;
+}
+
+.order__title {
+  @include title(30px, 0);
+  margin: 0;
+}
+
+.order__tagline {
+  @include tagline(22px);
+  margin-top: 8px;
+  margin-left: -4px;
+}
+
+.order__list {
+  @include list;
+  margin-top: 20px;
+}
+
+.order__item {
+  margin-top: 10px;
+  text-align: left;
+  padding: 2px 19px;
+}
+
+.order__subtitle {
+  @include title(20px, 0);
+  color: $red-color;
+  margin: 0;
+}
+
+.order__subtitle-index {
+  font-size: 35px;
+  padding-right: 10px;
+}
+
+.order__ctrl {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: red;
+  display: none;
+}

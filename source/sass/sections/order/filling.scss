@@ -1,0 +1,63 @@
+.filling {
+  position: relative;
+  background-color: $white-color;
+  padding-bottom: 25px;
+}
+
+.filling__slider {
+  @include list;
+  margin-top: 18px;
+  display: flex;
+  overflow: hidden;
+}
+
+.filling__item {
+  flex-shrink: 0;
+  width: 100%;
+  position: relative;
+}
+
+.filling__img-wrapper {
+  width: 241px;
+  height: 113px;
+  overflow: hidden;
+  background-color: black;
+}
+
+.filling__number {
+  @include text(12px);
+  color: $white-color;
+  position: absolute;
+  top: 80px;
+  right: 8px;
+}
+
+.filling__title {
+  @include text(16px, 700);
+  margin: 36px 0 0;
+}
+
+.filling__text {
+  @include text(14px);
+  line-height: 1.2;
+  margin: 3px 0 0;
+}
+
+.filling__price {
+  @include title(22px, 0);
+  text-align: center;
+  margin: 10px 0 0;
+}
+
+.filling__dots {
+  position: absolute;
+  top: 178px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.filling__choose {
+  text-align: center;
+  min-width: 179px;
+  margin: 26px auto 0;
+}

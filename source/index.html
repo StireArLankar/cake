@@ -8,15 +8,15 @@
     <title>Торты на заказ</title>
   </head>
   <body>
-    header.header>(nav.nav.__nav>(div.__logo-wrapper>img.__logo)+button.btn.__toggle+ul.__list>li.__item*6>a.__link)+p.__phone|bem
-
     <header class="header">
       <div class="header__logo-wrapper">
         <img src="" alt="" class="header__logo">
       </div>
       <nav class="header-nav header__nav">
-        <button class="btn header-nav__toggle aria-label="Открыть меню"">
-          <span class="humburger"></span>
+        <button class="btn header-nav__toggle" aria-label="Открыть меню">
+          <span class="humburger-1"></span>
+          <span class="humburger-2"></span>
+          <span class="humburger-3"></span>
         </button>
         <ul class="header-nav__list">
           <li class="header-nav__item">
@@ -47,10 +47,10 @@
         <h1 class="intro__title">Торты на заказ</h1>
         <b class="intro__tagline">Ручная работа</b>
         <ul class="intro__list">
-          <li class="intro__item">Натуральные ингридиенты</li>
-          <li class="intro__item">Доствка бесплатно при заказе от 2000 рублей*</li>
+          <li class="intro__item intro__item--natural">Натуральные ингридиенты</li>
+          <li class="intro__item intro__item--gift">Достaвка бесплатно при заказе от 2000 рублей*</li>
         </ul>
-        <button class="btn intro__btn">Выбрать торт</button>
+        <button class="btn redbtn intro__btn">Выбрать торт</button>
       </section>
 
       <section class="cakes">
@@ -118,8 +118,8 @@
         <b class="order__tagline">Соберите торт в 3 шага</b>
         <ol class="order__list">
           <li class="filling order__item">
-            <h3 class="order__title">
-              <span class="order__title-index">01</span>
+            <h3 class="order__subtitle">
+              <span class="order__subtitle-index">01</span>
               Выберите начинку
             </h3>
             <ul class="filling__slider">
@@ -140,14 +140,14 @@
               <li class="dots__item"></li>
               <li class="dots__item"></li>
             </ul>
-            <button class="btn filling__choose">Выбрать</button>
+            <button class="btn redbtn filling__choose">Выбрать</button>
             <button class="btn filling__ctrl order__ctrl order__ctrl--left"></button>
             <button class="btn filling__ctrl order__ctrl order__ctrl--right"></button>
           </li>
 
           <li class="size order__item">
-            <h3 class="order__title">
-              <span class="order__title-index">02</span>
+            <h3 class="order__subtitle">
+              <span class="order__subtitle-index">02</span>
               Размер
             </h3>
             <ul class="size__slider">
@@ -156,7 +156,7 @@
                   <img src="" alt="" class="size__img">
                 </div>
                 <p class="size__size">17-18 см</p>
-                <p class="size__person">(6 персон)</p>
+                <p class="size__person">(1 кг - 6 персон)</p>
               </li>
               <li class="size__item">
                 <div class="size__img-wrapper">
@@ -186,12 +186,12 @@
               <li class="dots__item"></li>
               <li class="dots__item"></li>
             </ul>
-            <button class="btn size__choose">Выбрать</button>
+            <button class="btn redbtn size__choose">Выбрать</button>
           </li>
 
           <li class="appearence order__item">
-            <h3 class="order__title">
-              <span class="order__title-index">03</span>
+            <h3 class="order__subtitle">
+              <span class="order__subtitle-index">03</span>
               Оформление
             </h3>
             <ul class="appearence__slider">
@@ -199,8 +199,8 @@
                 <div class="appearence__img-wrapper">
                   <img src="" alt="" class="appearence__img">
                 </div>
-                <h4 class="appearence__title"></h4>
-                <p class="appearence__price"></p>
+                <h4 class="appearence__title">Маршмэллоу</h4>
+                <p class="appearence__price">600 руб/кг</p>
               </li>
               <li class="appearence__item">
                 <div class="appearence__img-wrapper">
@@ -210,7 +210,7 @@
                 <p class="appearence__price"></p>
               </li>
             </ul>
-            <p class="appearence__number">1/12</p>
+            <p class="appearence__number">1/35</p>
             <ul class="dots appearence__dots">
               <li class="dots__item"></li>
               <li class="dots__item"></li>
@@ -218,7 +218,7 @@
               <li class="dots__item"></li>
               <li class="dots__item"></li>
             </ul>
-            <button class="btn appearence__choose">Выбрать</button>
+            <button class="btn redbtn appearence__choose">Выбрать</button>
             <button class="btn appearence__ctrl order__ctrl order__ctrl--left"></button>
             <button class="btn appearence__ctrl order__ctrl order__ctrl--right"></button>
           </li>
@@ -226,18 +226,18 @@
         <form class="order-form order__form">
           <h3 class="order-form__title">Ваш выбор</h3>
           <label class="order-form__label">
-            <h4 class="order-form__label-title">Начинка<h4>
+            <h4 class="order-form__label-title">Начинка</h4>
             <input type="text" class="order-form__input" name="order-filling" id="order-filling">
           </label>
           <label class="order-form__label">
-            <h4 class="order-form__label-title">Размер<h4>
+            <h4 class="order-form__label-title">Размер</h4>
             <input type="text" class="order-form__input" name="order-size" id="order-size">
           </label>
           <label class="order-form__label">
-            <h4 class="order-form__label-title">Оформление<h4>
+            <h4 class="order-form__label-title">Оформление</h4>
             <input type="text" class="order-form__input" name="order-appearence" id="order-appearence">
           </label>
-          <button class="btn order-form__submit" type="submit">
+          <button class="btn redbtn order-form__submit" type="submit">
             Заказать торт
           </button>
         </form>
@@ -415,5 +415,6 @@
       <hr class="footer__hr">
       <p class="footer__copyright">© 2018 Cakes</p>
     </footer>
+    <script src="js/script.min.js"></script>
   </body>
 </html>
