@@ -1,0 +1,45 @@
+@mixin list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@mixin wrapper {
+  width: 1170px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@mixin wrapper-wide {
+  width: 100%;
+  min-width: 1170px;
+  padding-right: 60px;
+  padding-left: 60px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@mixin price {
+  font-size: 14px;
+  font-family: "Helvetica", sans-serif;
+  color: $green-color;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+@mixin tagline($fz, $ls: 0.4em) {
+  text-transform: uppercase;
+  font-size: $fz;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.2;
+  letter-spacing: $ls;
+}
+
+@mixin title($fz) {
+  text-transform: lowercase;
+  font-size: $fz;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.2;
+}
