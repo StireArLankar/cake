@@ -16,3 +16,10 @@
   margin: 0;
   color: $dark-grey;
 }
+
+@media (min-width: $tablet-width) {
+  .thumb {
+    height: auto;
+    padding: 18px;
+  }
+}

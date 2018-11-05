@@ -27,7 +27,7 @@
   transform: rotate(-45deg);
 }
 
-@media (max-width: ($tablet-width - 1px)) {
+@media (max-width: ($desktop-width - 1px)) {
   .header-nav--closed {
     .humburger-1 {
       transform: translate(0, 0);

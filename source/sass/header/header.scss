@@ -4,12 +4,46 @@
   top: 0;
   left: 0;
   right: 0;
+  z-index: 2;
+}
+
+.header__nav {
+  position: absolute;
+  width: 100%;
 }
 
 .header__logo-wrapper {
   height: 40px;
+  width: 200px;
+  background-color: red;
 }
 
 .header__phone {
   display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header__logo-wrapper {
+    height: 60px;
+    margin-left: $padding-tablet;
+    padding-left: 27px;
+  }
+
+  .header__nav {
+    align-self: flex-end;
+  }
+
+  .header__phone {
+    @include text(15px, 700);
+    display: block;
+    margin: 0;
+    margin-right: $padding-tablet;
+    padding-right: 27px;
+  }
 }

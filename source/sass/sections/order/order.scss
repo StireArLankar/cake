@@ -1,5 +1,4 @@
 .order {
-  align-items: center;
   text-align: center;
   padding: 43px $padding-mobile 0;
 }
@@ -44,4 +43,46 @@
   border-radius: 50%;
   background-color: red;
   display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .order {
+    text-align: center;
+    padding: 43px $padding-tablet 0;
+  }
+
+  .order__title {
+    font-size: 35px;
+    margin: 0;
+  }
+
+  .order__tagline {
+    font-size: 26px;
+    margin-top: 10px;
+    margin-left: 0;
+  }
+
+  .order__list {
+    margin-top: 30px;
+  }
+
+  .order__item {
+    margin-top: 21px;
+    padding: 23px 45px;
+  }
+
+  .order__subtitle {
+    position: absolute;
+    font-size: 23px;
+    line-height: 19px;
+    margin: 0;
+    max-width: 125px;
+  }
+
+  .order__subtitle-index {
+    font-size: 40px;
+    line-height: 45px;
+    padding-right: 10px;
+    display: block;
+  }
 }

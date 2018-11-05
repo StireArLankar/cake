@@ -1,0 +1,137 @@
+.info {
+  padding: 36px $padding-mobile 0;
+}
+
+.info__title {
+  @include title(30px, 0.015em);
+  text-align: center;
+  margin: 0;
+}
+
+.info__wrapper {
+  margin: 24px 0 0;
+  position: relative;
+}
+
+.info__img-wrapper {
+  background-color: red;
+  width: 155px;
+  height: 155px;
+  border-radius: 50%;
+}
+
+.info__text-wrapper {
+  padding: 11px 0 0;
+}
+
+.info__tagline {
+  @include tagline(22px);
+  display: block;
+  margin: 0;
+}
+
+.info__subtitle {
+  @include text(15px, 700);
+  margin: 10px 0 0;
+}
+
+.info__text {
+  @include text(14px);
+  margin: 5px 0 0;
+  line-height: 17px;
+}
+
+.info__social {
+  @include list;
+  position: absolute;
+  top: -6px;
+  right: 46px;
+  flex-direction: column;
+}
+
+.info__quote {
+  margin: 45px 0 0;
+  text-align: center;
+  padding: 20px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info__quote-text {
+  @include title(16px, 0.01em);
+  margin: 0;
+  font-style: italic;
+}
+
+.info__cite {
+  display: block;
+  background-color: green;
+  margin-top: 15px;
+  width: 100px;
+  height: 50px;
+}
+
+@media (min-width: $tablet-width) {
+  .info {
+    padding: 88px calc(27px + #{$padding-tablet}) 0;
+  }
+
+  .info__title {
+    font-size: 36px;
+    letter-spacing: -0.01em;
+    text-align: left;
+    margin: 0;
+  }
+
+  .info__wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0;
+    padding-bottom: 30px;
+  }
+
+  .info__img-wrapper {
+    width: 314 * 100vw / 768;
+    height: 314 * 100vw / 768;
+    flex-shrink: 0;
+    margin-top: -38px;
+  }
+
+  .info__text-wrapper {
+    padding: 6px 0 0;
+  }
+
+  .info__tagline {
+    font-size: 26px;
+  }
+
+  .info__subtitle {
+    margin: 6px 0 0;
+    font-size: 15px;
+  }
+
+  .info__social {
+    position: absolute;
+    top: auto;
+    right: auto;
+    left: 0;
+    bottom: 0;
+    flex-direction: row;
+  }
+
+  .info__quote {
+    margin: 18px 0 0;
+    padding: 20px 23% 0;
+  }
+
+  .info__quote-text {
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0;
+  }
+
+  .info__cite {
+    margin-top: 20px;
+  }
+}

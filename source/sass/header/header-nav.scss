@@ -1,6 +1,5 @@
 .header-nav {
-  position: relative;
-  background-color: $light-grey;
+  min-width: 320px;
 }
 
 @media (max-width: ($desktop-width - 1px)) {
@@ -20,6 +19,9 @@
 
 .header-nav__list {
   @include list;
+  position: absolute;
+  background-color: $light-grey;
+  width: 100%;
 }
 
 .header-nav__item:not(:last-child) {
@@ -47,31 +49,41 @@
 
 @media (min-width: $tablet-width) {
   .header-nav__toggle {
-    display: none;
+    top: -36px;
+    left: 50%;
+    width: 23px;
+    height: 18px;
   }
 
   .header-nav__list {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    max-width: 320px;
+    flex-direction: row;
+    justify-content: space-around;
   }
 
   .header-nav__item {
     padding-right: 0;
-    padding-left: 35px;
+    padding-left: 0;
     border: 0;
     font-size: 18px;
     font-weight: 400;
     line-height: 25px;
+
+    &:not(:last-child) {
+      border-bottom: 0;
+    }
   }
 
   .header-nav__link {
-    padding-bottom: 8px;
+    padding: 12px 5px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .header-nav__toggle {
+    display: none;
+  }
+
   .header-nav__item {
     padding-left: 35px;
     font-size: 20px;

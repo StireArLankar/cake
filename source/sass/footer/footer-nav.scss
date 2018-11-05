@@ -1,0 +1,36 @@
+.footer-nav__list {
+  @include list;
+}
+
+.footer-nav__item {
+  display: flex;
+}
+
+.footer-nav__link {
+  color: $white-color;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 6.7px 0 7px;
+}
+
+@media (min-width: $tablet-width) {
+  .footer-nav__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-nav__item {
+    display: flex;
+    justify-content: space-between;
+
+    &--phone {
+      display: none;
+    }
+  }
+
+  .footer-nav__link {
+    font-size: 12px;
+    padding: 6.7px 0 7px;
+  }
+}

@@ -37,3 +37,42 @@
   margin-top: 31px;
   min-width: 225px;
 }
+
+@media (min-width: $tablet-width) {
+  .intro {
+    padding: 157px calc(27px + #{$padding-tablet}) 20px;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .intro__title {
+    font-size: 74px;
+    max-width: 350px;
+    line-height: 55px;
+    letter-spacing: 0.06em;
+    padding-left: 0;
+  }
+
+  .intro__tagline {
+    font-size: 36px;
+    padding-left: 0;
+    margin-top: 26px;
+  }
+
+  .intro__list {
+    order: 4;
+    margin-top: 162px;
+    display: flex;
+    width: 78%;
+  }
+
+  .intro__item {
+    padding-left: 67px;
+    padding-right: 60px;
+    min-height: 35px;
+  }
+
+  .intro__btn {
+    margin-top: 54px;
+  }
+}

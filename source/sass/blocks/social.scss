@@ -1,0 +1,19 @@
+.social {
+  @include list;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social__item {
+  display: flex;
+  margin: 10px;
+}
+
+.social__link {
+  flex-grow: 1;
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  border-radius: 50%;
+}

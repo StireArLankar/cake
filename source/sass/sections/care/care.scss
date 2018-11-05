@@ -1,0 +1,41 @@
+.care {
+  text-align: left;
+  padding: 32px $padding-mobile 170px;
+}
+
+.care__title {
+  @include title(30px, 0);
+  margin: 0;
+}
+
+.care__tagline {
+  @include tagline(22px);
+  margin-top: 6px;
+}
+
+.care__text {
+  @include text(14px);
+  margin: 0;
+  line-height: 17px;
+  padding-right: 27px;
+}
+
+@media (min-width: $tablet-width) {
+  .care {
+    padding: 130px calc(27px + #{$padding-tablet}) 126px;
+    margin-top: -30px;
+  }
+
+  .care__title {
+    font-size: 35px;
+  }
+
+  .care__tagline {
+    font-size: 26px;
+  }
+
+  .care__text {
+    margin-top: 5px;
+    padding-right: 52%;
+  }
+}

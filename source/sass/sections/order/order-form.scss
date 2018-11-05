@@ -36,3 +36,50 @@
   min-width: 226px;
   margin: 29px auto 0;
 }
+
+@media (min-width: $tablet-width) {
+  .order-form {
+    padding: 6px 45px 43px 44px;
+  }
+
+  .order-form__title {
+    font-size: 23px;
+  }
+
+  .order-form__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .order-form__label {
+    margin-top: 13px;
+    flex-grow: 1;
+    width: 160px;
+    margin-right: 20px;
+
+    &--small {
+      width: 74px;
+    }
+  }
+
+  .order-form__label-title {
+    padding-right: 0;
+    text-align: left;
+    font-size: 18px;
+  }
+
+  .order-form__input {
+    background-color: transparent;
+    margin: 0;
+    margin-top: 5px;
+  }
+
+  .order-form__submit {
+    text-align: center;
+    min-width: 160px;
+    margin: 0;
+    margin-left: 20px;
+    align-self: flex-end;
+    font-size: 10px;
+  }
+}

@@ -1,5 +1,4 @@
 .cakes {
-  align-items: center;
   text-align: center;
   padding: 42px $padding-mobile 0;
 }
@@ -21,4 +20,41 @@
 
 .cakes__item > * {
   flex-grow: 1;
+}
+
+@media (min-width: $tablet-width) {
+  .cakes {
+    align-items: center;
+    text-align: left;
+    padding: 114px $padding-tablet 0;
+  }
+
+  .cakes__title {
+    font-size: 35px;
+  }
+
+  .cakes__list {
+    margin-top: 39px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 184px 184px 184px 184px;
+    grid-template-areas:
+      "a1 a1 a1 a2 a2"
+      "a1 a1 a1 a3 a3"
+      "a4 a4 a6 a6 a6"
+      "a5 a5 a6 a6 a6";
+    grid-column-gap: 2.9vw;
+    grid-row-gap: 2.9vw;
+  }
+
+  .cakes__item {
+    margin: 0;
+    /* stylelint-disable */
+    @for $i from 1 through 6 {
+      &:nth-child(#{$i}) {
+        grid-area: a#{$i};
+      }
+    }
+    /* stylelint-enable */
+  }
 }

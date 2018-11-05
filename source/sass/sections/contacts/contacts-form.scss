@@ -1,0 +1,38 @@
+.contacts-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contacts-form__label {
+  display: flex;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.contacts-form__input {
+  @include text(14px);
+  flex-grow: 1;
+  background-color: $white-color;
+  border: 0;
+  padding: 15px 8px 16px;
+}
+
+.contacts-form__btn {
+  margin-top: 20px;
+  text-transform: none;
+  font-size: 19px;
+  min-width: 180px;
+  padding: 6px 20px 5px;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts-form__btn {
+    align-self: flex-start;
+    margin-top: 28px;
+    font-size: 14px;
+    min-width: 160px;
+    padding: 8px 20px 7px;
+  }
+}
