@@ -27,7 +27,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: red;
+}
+
+.size__img {
+  width: auto;
+  height: auto;
 }
 
 .size__size {

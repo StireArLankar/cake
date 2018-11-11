@@ -18,13 +18,27 @@
   flex-shrink: 0;
   width: 100%;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .filling__img-wrapper {
+  background-color: $pink-color;
+  position: relative;
   width: 241px;
   height: 113px;
   overflow: hidden;
-  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.filling__img {
+  width: auto;
+  height: auto;
+  flex-shrink: 0;
 }
 
 .filling__number {
@@ -33,6 +47,10 @@
   position: absolute;
   top: 80px;
   right: 8px;
+}
+
+.filling__description {
+  padding-bottom: 1px;
 }
 
 .filling__title {
@@ -77,6 +95,9 @@
 
   .filling__item {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
   }
 
   .filling__img-wrapper {

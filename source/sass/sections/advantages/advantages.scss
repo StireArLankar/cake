@@ -23,7 +23,28 @@
 }
 
 .advantages__item {
+  position: relative;
   padding: 72px 0 0;
+
+  &--natural::before {
+    content: "";
+    position: absolute;
+    background: url("../img/icon-leaf.svg") no-repeat 0 0;
+    width: 61px;
+    height: 61px;
+    top: 0;
+    left: calc(50% - 30px);
+  }
+
+  &--cake::before {
+    content: "";
+    position: absolute;
+    background: url("../img/cake-icon.png") no-repeat 0 0;
+    width: 84px;
+    height: 50px;
+    top: 10px;
+    left: calc(50% - 42px);
+  }
 }
 
 .advantages__subtitle {

@@ -14,16 +14,19 @@ body {
   &::after {
     //content: "";
     position: absolute;
-    //background-image: url("../img/fon1.png");
+    background-image: url("../img/fon1.png");
     //background-image: url("../img/fon2.png");
+    //background-image: url("../img/fon3.png");
     opacity: 0.4;
     z-index: 1;
     top: 0;
     left: 0;
-    //width: 320px;
-    //height: 6541px;
-    width: 768px;
-    height: 5822px;
+    width: 320px;
+    height: 6541px;
+    //width: 768px;
+    //height: 5822px;
+    //width: 1366px;
+    //height: 9290px;
   }
 }
 

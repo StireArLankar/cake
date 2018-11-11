@@ -5,6 +5,7 @@
   align-items: center;
   text-align: center;
   padding: 167px $padding-mobile 0;
+  background: url("../img/intro_mobile@1x.png") no-repeat 42% -170px;
 }
 
 .intro__title {
@@ -26,11 +27,32 @@
 
 .intro__item {
   @include text(14px);
+  position: relative;
   padding-left: 40px;
   padding-right: 30px;
   text-align: left;
   min-height: 35px;
   margin-bottom: 8px;
+
+  &--natural::before {
+    content: "";
+    background: url("../img/icon-leaf.svg") no-repeat 0 0;
+    width: 33px;
+    height: 33px;
+    position: absolute;
+    left: 0;
+    top: calc(50% - 20px);
+  }
+
+  &--gift::before {
+    content: "";
+    background: url("../img/icon-gift.svg") no-repeat 0 0;
+    width: 33px;
+    height: 33px;
+    position: absolute;
+    left: 0;
+    top: calc(50% - 18px);
+  }
 }
 
 .intro__btn {

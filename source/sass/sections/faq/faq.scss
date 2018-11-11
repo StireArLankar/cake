@@ -1,8 +1,10 @@
 .faq {
   text-align: center;
   padding: 27px $padding-mobile 151px;
-  background-color: $red-color;
   color: $white-color;
+  background: url("../img/order_mobile@1x.png") no-repeat 0 120%;
+  background-size: auto;
+  background-color: #e83c41;
 }
 
 .faq__title {
@@ -34,7 +36,6 @@
 @media (min-width: $tablet-width) {
   .faq {
     padding: 40px $padding-tablet 47px;
-    background-color: $red-color;
   }
 
   .faq__title {

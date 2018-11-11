@@ -30,7 +30,16 @@
   width: 58px;
   height: 58px;
   border-radius: 50%;
-  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.review__img {
+  width: auto;
+  height: auto;
+  flex-shrink: 0;
 }
 
 .review__name {

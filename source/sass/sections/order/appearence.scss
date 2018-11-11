@@ -24,7 +24,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding-top: 27px;
+  padding: 27px 0 1px;
 }
 
 .appearence__img-wrapper {
@@ -33,6 +33,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 3px 5px 1px rgba(0, 0, 0, .1);
+  overflow: hidden;
+}
+
+.appearence__img {
+  width: auto;
+  height: auto;
+  flex-shrink: 0;
 }
 
 .appearence__title {

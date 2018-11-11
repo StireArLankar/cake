@@ -5,8 +5,15 @@
 }
 
 .footer__logo-wrapper {
-  background-color: green;
   height: 40px;
+  display: flex;
+  align-items: center;
+  width: 46px;
+}
+
+.footer__logo {
+  width: 100%;
+  height: auto;
 }
 
 .footer__nav {
@@ -50,7 +57,6 @@
   }
 
   .footer__logo-wrapper {
-    background-color: green;
     height: 40px;
     width: 15%;
   }

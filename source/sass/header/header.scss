@@ -14,8 +14,16 @@
 
 .header__logo-wrapper {
   height: 40px;
-  width: 200px;
-  background-color: red;
+  width: 46px;
+  margin-left: $padding-mobile;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header__logo {
+  width: 100%;
+  height: auto;
 }
 
 .header__phone {
@@ -33,6 +41,7 @@
     height: 60px;
     margin-left: $padding-tablet;
     padding-left: 27px;
+    width: 77px;
   }
 
   .header__nav {
