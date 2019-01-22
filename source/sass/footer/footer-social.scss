@@ -1,0 +1,46 @@
+.footer-social {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.footer-social__item {
+  display: flex;
+  margin: 0 10px;
+}
+
+.footer-social__link {
+  cursor: pointer;
+  flex-grow: 1;
+  width: 30px;
+  height: 30px;
+  opacity: 0.4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    opacity: 1;;
+  }
+}
+
+.footer-social__icon {
+  fill: $white-color;
+  stroke: $white-color;
+  height: auto;
+
+  &--vk {
+    stroke-width: 8px;
+    width: 100%;
+  }
+
+  &--instagramm {
+    stroke-width: 0.25px;
+    width: 80%;
+  }
+
+  &--twitter {
+    stroke-width: 14px;
+    width: 80%;
+  }
+}

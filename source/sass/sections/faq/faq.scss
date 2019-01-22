@@ -1,15 +1,30 @@
 .faq {
+  position: relative;
   text-align: center;
   padding: 27px $padding-mobile 151px;
   color: $white-color;
-  background: url("../img/order_mobile@1x.png") no-repeat 0 120%;
-  background-size: auto;
-  background-color: #e83c41;
+  background-color: #d32431;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background: url("../img/faq_@1x.jpg") no-repeat 0 120%;
+    width: 90vw;
+    height: 200px;
+    bottom: -60px;
+    left: 0;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/faq_@2x.jpg");
+    }
+  }
 }
 
 .faq__title {
   @include title(30px, 0);
   margin: 0;
+  position: relative;
 }
 
 .faq__list {
@@ -18,9 +33,24 @@
 }
 
 .faq__item {
+  position: relative;
   padding-left: 47px;
   margin-top: 18px;
   text-align: left;
+
+  /* stylelint-disable */
+  @for $i from 1 through 3 {
+    &:nth-child(#{$i}) {
+      &::before {
+        @include title(41px , 0);
+        content: "#{$i}";
+        position: absolute;
+        left: 19px;
+        top: -18px;
+      }
+    }
+  }
+  /* stylelint-enable */
 }
 
 .faq__subtitle {
@@ -35,7 +65,19 @@
 
 @media (min-width: $tablet-width) {
   .faq {
-    padding: 40px $padding-tablet 47px;
+    padding: 40px $padding-tablet 57px;
+
+    &::before {
+      background: url("../img/faq_@2x.jpg") no-repeat 0 0;
+      width: 867px;
+      height: 443px;
+      bottom: -50px;
+      left: -193px;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/faq_@4x.jpg");
+      }
+    }
   }
 
   .faq__title {
@@ -48,7 +90,7 @@
   }
 
   .faq__item {
-    margin-top: 30px;
+    margin-top: 40px;
 
     &--1 {
       padding-right: 29%;

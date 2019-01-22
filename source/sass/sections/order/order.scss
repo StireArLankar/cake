@@ -86,3 +86,48 @@
     display: block;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .order {
+    padding: 92px $padding-desktop 10px;
+  }
+
+  .order__title {
+    font-size: 51px;
+  }
+
+  .order__tagline {
+    font-size: 36px;
+  }
+
+  .order__list {
+    margin-top: 49px;
+  }
+
+  .order__item {
+    margin-top: 35px;
+    padding: 38px 80px;
+  }
+
+  .order__subtitle {
+    font-size: 34px;
+    line-height: 30px;
+    max-width: 150px;
+  }
+
+  .order__subtitle-index {
+    font-size: 70px;
+    line-height: 76px;
+    padding-right: 10px;
+  }
+}
+
+@media (min-width: $max-desktop-width) {
+  .order {
+    max-width: $max-desktop-width;
+    padding-left: $padding-desktop-base;
+    padding-right: $padding-desktop-base;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

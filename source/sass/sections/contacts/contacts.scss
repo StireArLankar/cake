@@ -4,6 +4,7 @@
 
 .contacts__left {
   padding-bottom: 10px;
+  position: relative;
 }
 
 .contacts__title {
@@ -33,6 +34,7 @@
 
 .contacts__right {
   padding: 13px 0 0;
+  position: relative;
 }
 
 .contacts__phone {
@@ -42,6 +44,7 @@
 
 .contacts__social {
   justify-content: flex-start;
+  margin-left: -10px;
 }
 
 .contacts__social .social__link {
@@ -51,9 +54,16 @@
 
 @media (min-width: $tablet-width) {
   .contacts {
-    padding: 37px calc(27px + #{$padding-tablet}) 57px;
+    position: relative;
+    padding: 37px calc(27px + #{$padding-tablet}) 100px;
     display: flex;
     justify-content: space-between;
+    background: url("../img/ask_.jpg") no-repeat 185% 100%;
+    background-size: 600px auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/ask_@2x.jpg");
+    }
   }
 
   .contacts__left {

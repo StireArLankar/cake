@@ -2,6 +2,11 @@
   text-align: left;
   padding: 32px $padding-mobile 170px;
   background: url("../img/care_mobile@1x.png") no-repeat 42% 221px;
+  background-size: 333px 325px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/care_mobile@2x.png");
+  }
 }
 
 .care__title {
@@ -25,6 +30,12 @@
   .care {
     padding: 130px calc(27px + #{$padding-tablet}) 126px;
     margin-top: -30px;
+    background: url("../img/care_@0,5x.png") no-repeat 100% 50%;
+    background-size: 45vw auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/care_@1x.png");
+    }
   }
 
   .care__title {

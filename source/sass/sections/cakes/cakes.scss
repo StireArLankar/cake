@@ -36,8 +36,8 @@
   .cakes__list {
     margin-top: 39px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 184px 184px 184px 184px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 22.5vw);
     grid-template-areas:
       "a1 a1 a1 a2 a2"
       "a1 a1 a1 a3 a3"
@@ -56,5 +56,38 @@
       }
     }
     /* stylelint-enable */
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cakes {
+    padding: 0 $padding-desktop 0;
+    margin-top: -45px;
+  }
+
+  .cakes__title {
+    font-size: 50px;
+    margin-left: -3px;
+  }
+
+  .cakes__list {
+    margin-top: 65px;
+    grid-template-rows: repeat(4, 22.5vw);
+  }
+}
+
+@media (min-width: $max-desktop-width) {
+  .cakes {
+    max-width: $max-desktop-width;
+    padding-left: $padding-desktop-base;
+    padding-right: $padding-desktop-base;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cakes__list {
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    grid-template-rows: repeat(4, 307px);
   }
 }

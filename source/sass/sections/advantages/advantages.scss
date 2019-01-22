@@ -60,6 +60,12 @@
 @media (min-width: $tablet-width) {
   .advantages {
     padding: 59px 0 85px;
+    background: url("../img/adv_@0,5x.png") no-repeat -10px 100%;
+    background-size: 37vw auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/adv_@1x.png");
+    }
   }
 
   .advantages__title {
@@ -78,6 +84,21 @@
 
   .advantages__item {
     padding: 12px 50px 0 57.4%;
+
+    &--natural::before {
+      width: 47px;
+      height: 47px;
+      top: 13px;
+      left: calc(50% - 15px);
+    }
+
+    &--cake::before {
+      width: 64px;
+      height: 38px;
+      top: 17px;
+      left: calc(50% - 25px);
+      background-size: cover;
+    }
   }
 
   .advantages__subtitle {

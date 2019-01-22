@@ -6,6 +6,10 @@
   overflow: hidden;
   height: 37.5vw;
   min-height: 120px;
+
+  &:hover {
+    box-shadow: 0px 2px 8px 2px rgba(255,0,68,0.1);
+  }
 }
 
 .thumb__title {
@@ -38,11 +42,27 @@
 .thumb__img {
   width: auto;
   height: auto;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 @media (min-width: $tablet-width) {
   .thumb {
     height: auto;
     padding: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .thumb {
+    padding: 40px;
+  }
+
+  .thumb__title {
+    font-size: 24px;
+  }
+
+  .thumb__amount {
+    font-size: 22px;
   }
 }
