@@ -58,7 +58,9 @@
     padding: 37px calc(27px + #{$padding-tablet}) 100px;
     display: flex;
     justify-content: space-between;
-    background: url("../img/ask_.jpg") no-repeat 185% 100%;
+    background-image: url("../img/ask_.jpg");
+    background-repeat: no-repeat;
+    background-position: 185% 100%;
     background-size: 600px auto;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -102,5 +104,66 @@
   .contacts__social .social__link {
     width: 60px;
     height: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    padding: 66px $padding-desktop 276px;
+    background-position: 116% 100%;
+    background-image: url("../img/ask_@2x.jpg");
+    background-size: 954px 636px;
+  }
+
+  .contacts__left {
+    width: 45%;
+  }
+
+  .contacts__right {
+    width: 48.4%;
+    padding-top: 124px;
+  }
+
+  .contacts__title {
+    font-size: 50px;
+    margin-left: -2px;
+  }
+
+  .contacts__tagline {
+    font-size: 35px;
+    margin-top: 32px;
+    margin-left: -4px;
+  }
+
+  .contacts__text {
+    margin-top: 17px;
+    font-size: 20px;
+
+    &--right {
+      margin: 30px 0 0;
+    }
+  }
+
+  .contacts__phone {
+    font-size: 20px;
+  }
+
+  .contacts__social {
+    margin-top: 18px;
+  }
+
+  .contacts__social .social__link {
+    width: 63px;
+    height: 63px;
+  }
+}
+
+@media (min-width: $max-desktop-width) {
+  .contacts {
+    max-width: $max-desktop-width;
+    padding-right: $padding-desktop-base;
+    padding-left: $padding-desktop-base;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

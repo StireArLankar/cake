@@ -36,3 +36,12 @@
     padding: 8px 20px 7px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .contacts-form__btn {
+    margin-top: 28px;
+    font-size: 20px;
+    min-width: 180px;
+    padding: 8px 20px 7px;
+  }
+}
