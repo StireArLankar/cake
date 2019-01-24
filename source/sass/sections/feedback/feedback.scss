@@ -1,4 +1,5 @@
 .feedback {
+  position: relative;
   text-align: center;
   padding: 39px $padding-mobile 0;
 }
@@ -27,19 +28,20 @@
 }
 
 .feedback__img-wrapper {
-  width: 58px;
-  height: 58px;
+  position: relative;
+  width: (58px * 100% / 280px);
+  padding-top: (58px * 100% / 280px);
   border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   overflow: hidden;
 }
 
 .feedback__img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: auto;
   height: auto;
-  flex-shrink: 0;
 }
 
 .feedback__name {
@@ -90,7 +92,7 @@
 
   .feedback__window {
     position: relative;
-    width: 60%;
+    width: 55.3%;
     margin: 0 auto;
   }
 
@@ -100,16 +102,16 @@
 
   .feedback__item {
     align-items: flex-start;
-    padding: 20px 0 43px 150px;
+    padding: 20px 0 43px (130px * 100% / 400px);
   }
 
   .feedback__img-wrapper {
-    width: 108px;
-    height: 108px;
-    border-radius: 50%;
+    width: (108px * 100% / 400px);
+    padding-top: (108px * 100% / 400px);
     position: absolute;
-    left: 16px;
-    top: calc(50% - 54px);
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   .feedback__name {
@@ -122,7 +124,7 @@
 
   .feedback__text-wrapper {
     text-align: left;
-    padding: 0 39px 0 0;
+    padding: 0;
     margin-top: 10px;
     font-size: 14px;
     line-height: 17px;
@@ -135,5 +137,59 @@
 
   .feedback__dots {
     display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback {
+    padding: 88px $padding-desktop 0;
+  }
+
+  .feedback__title {
+    font-size: 50px;
+  }
+
+  .feedback__window {
+    width: 52%;
+  }
+
+  .feedback__item {
+    padding: 50px 0 43px (260px * 100% / 633px);
+  }
+
+  .feedback__img-wrapper {
+    width: 33%;
+    padding-top: 33%;
+  }
+
+  .feedback__name {
+    font-size: 26px;
+  }
+
+  .feedback__desc {
+    font-size: 20px;
+  }
+
+  .feedback__text-wrapper {
+    padding-top: 9px;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .feedback__number {
+    right: 22%;
+    top: auto;
+    bottom: 3%;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: $max-desktop-width) {
+  .feedback {
+    max-width: $max-desktop-width;
+    padding-left: $padding-desktop-base;
+    padding-right: $padding-desktop-base;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
