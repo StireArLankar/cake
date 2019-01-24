@@ -14,19 +14,20 @@
 }
 
 .info__img-wrapper {
+  position: relative;
   width: 155px;
-  height: 155px;
+  padding-top: 155px;
   border-radius: 50%;
   overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .info__img {
-  width: auto;
+  position: absolute;
+  width: 100%;
   height: auto;
-  flex-shrink: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .info__text-wrapper {
@@ -72,7 +73,8 @@
     background: url("../img/quotes.svg") no-repeat 0 0;
     position: absolute;
     top: -15px;
-    left: calc(50% - 20px);
+    left: 50%;
+    transform: translateX(-50%);
     height: 18px;
     width: 40px;
   }
@@ -116,22 +118,17 @@
     display: flex;
     flex-direction: row-reverse;
     margin: 0;
-    padding-bottom: 30px;
   }
 
   .info__img-wrapper {
     width: 314 * 100vw / 768;
-    height: 314 * 100vw / 768;
+    padding-top: 314 * 100vw / 768;
     flex-shrink: 0;
     margin-top: -38px;
   }
 
-  .info__img {
-    width: 100%;
-  }
-
   .info__text-wrapper {
-    padding: 6px 30px 0 0;
+    padding: 6px 30px 30px 0;
   }
 
   .info__tagline {
@@ -169,5 +166,80 @@
 
   .info__cite {
     margin-top: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .info {
+    padding: 171px calc(43px + #{$padding-desktop}) 0;
+  }
+
+  .info__title {
+    font-size: 50px;
+    margin-left: -3px;
+  }
+
+  .info__img-wrapper {
+    width: 40%;
+    padding-top: 40%;
+    margin-top: -63px;
+  }
+
+  .info__text-wrapper {
+    padding: 22px 30px 40px 0;
+  }
+
+  .info__tagline {
+    font-size: 34px;
+  }
+
+  .info__subtitle {
+    font-size: 20px;
+  }
+
+  .info__text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .info__social {
+    left: -10px;
+  }
+
+  .info__quote {
+    margin: 60px 0 0;
+    padding: 53px 22% 0;
+
+    &::before {
+      height: 40px;
+      width: 60px;
+    }
+  }
+
+  .info__quote-text {
+    font-size: 31px;
+    line-height: 37px;
+    letter-spacing: 0.01em;
+  }
+
+  .info__cite {
+    margin-top: 37px;
+    width: 150px;
+    height: 100px;
+  }
+
+  .info__cite-img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-width: $max-desktop-width) {
+  .info {
+    max-width: $max-desktop-width;
+    padding-left: $padding-desktop-base + 47px;
+    padding-right: $padding-desktop-base + 47px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

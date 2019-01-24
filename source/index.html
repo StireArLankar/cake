@@ -417,7 +417,17 @@
         <blockquote class="info__quote">
           <p class="info__quote-text">Я за простые рецепты. В Италии это называют cucina povera: когда обычные ингридиетны превращаются в божестенное блюдо.</p>
           <cite class="info__cite">
-            <img src="img/sign__mobile@1x.png" alt="" class="info__cite-img">
+            <picture>
+              <source
+                media="(min-width: 1104px)"
+                srcset="img/sign__desk@1x.png">
+              <source
+                media="(min-width: 768px)"
+                srcset="img/sign__mobile@2x.png">
+              <img alt="Роспись Паши-пекаря"
+                class="info__cite-img"
+                src="img/sign__mobile@1x.png">
+            </picture>
           </cite>
         </blockquote>
       </section>
