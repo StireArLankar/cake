@@ -1,12 +1,15 @@
 .care {
-  text-align: left;
-  padding: 32px $padding-mobile 170px;
   background: url("../img/care_mobile@1x.png") no-repeat 42% 221px;
   background-size: 333px 325px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/care_mobile@2x.png");
   }
+}
+
+.care__wrapper {
+  text-align: left;
+  padding: 32px $padding-mobile 170px;
 }
 
 .care__title {
@@ -28,7 +31,6 @@
 
 @media (min-width: $tablet-width) {
   .care {
-    padding: 130px calc(27px + #{$padding-tablet}) 126px;
     margin-top: -30px;
     background: url("../img/care_@0,5x.png") no-repeat 100% 50%;
     background-size: 45vw auto;
@@ -36,6 +38,10 @@
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/care_@1x.png");
     }
+  }
+
+  .care__wrapper {
+    padding: 130px calc(27px + #{$padding-tablet}) 126px;
   }
 
   .care__title {
@@ -49,5 +55,59 @@
   .care__text {
     margin-top: 5px;
     padding-right: 52%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .care {
+    margin-top: -70px;
+    background: url("../img/care_@1x.png") no-repeat 100% 50%;
+    background-size: 45vw auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/care_@2x.png");
+    }
+  }
+
+  .care__wrapper {
+    padding: 228px $padding-desktop 280px;
+  }
+
+  .care__title {
+    font-size: 50px;
+    margin-left: -2px;
+  }
+
+  .care__tagline {
+    font-size: 35px;
+    margin-left: -3px;
+    margin-top: 19px;
+  }
+
+  .care__text {
+    margin-top: 6px;
+    font-size: 20px;
+    padding-right: 62%;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $max-desktop-width) {
+  .care {
+    margin-top: -30px;
+    background: url("../img/care_@1x.png") no-repeat 100% 50%;
+    background-size: 45vw auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/care_@2x.png");
+    }
+  }
+
+  .care__wrapper {
+    max-width: $max-desktop-width;
+    padding-left: $padding-desktop-base;
+    padding-right: $padding-desktop-base;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
