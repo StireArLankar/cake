@@ -1,4 +1,4 @@
-.advantages {
+.advantages__wrapper {
   padding: 26px 0 0;
 }
 
@@ -59,13 +59,18 @@
 
 @media (min-width: $tablet-width) {
   .advantages {
-    padding: 59px 0 85px;
-    background: url("../img/adv_@0,5x.png") no-repeat -10px 100%;
+    background-image: url("../img/adv_@0,5x.png");
+    background-position: calc(50% - 30vw) 50%;
+    background-repeat: no-repeat;
     background-size: 37vw auto;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/adv_@1x.png");
     }
+  }
+
+  .advantages__wrapper {
+    padding: 59px 0 85px;
   }
 
   .advantages__title {
@@ -109,5 +114,81 @@
   .advantages__text {
     @include text(14px);
     margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages {
+    background-image: url("../img/adv_@1x.png");
+    background-position: calc(50% - 32vw) 100%;
+    background-repeat: no-repeat;
+    background-size: 38vw auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/adv_@2x.png");
+    }
+  }
+
+  .advantages__wrapper {
+    padding: 112px 0 200px;
+  }
+
+  .advantages__title {
+    font-size: 50px;
+  }
+
+  .advantages__tagline {
+    font-size: 35px;
+    margin-top: 27px;
+  }
+
+  .advantages__list {
+    width: 49%;
+    margin-left: auto;
+    margin-top: 126px;
+    padding: 0;
+  }
+
+  .advantages__item {
+    padding: 0;
+    width: 57%;
+    margin-top: 34px;
+
+    &--natural::before {
+      $size: 61px;
+      width: $size;
+      height: $size;
+      left: -$size - 50px;
+      transform: translateX(50%);
+
+      top: 13px;
+    }
+
+    &--cake::before {
+      $size: 80px;
+      width: $size;
+      left: -$size - 50px;
+      transform: translateX(50%);
+
+      height: 48px;
+      top: 17px;
+      background-size: cover;
+    }
+  }
+
+  .advantages__subtitle {
+    font-size: 20px;
+  }
+
+  .advantages__text {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: $max-desktop-width) {
+  .advantages__wrapper {
+    max-width: $max-desktop-width;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
