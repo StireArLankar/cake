@@ -147,6 +147,9 @@
         <b class="order__tagline">Соберите торт в 3 шага</b>
         <ol class="order__list">
           <li class="filling order__item">
+            <div class="order__loader">
+                <img class="order__spinner" src="img/spinner.svg" alt="spinner" width="50" height="50">
+            </div>
             <h3 class="order__subtitle">
               <span class="order__subtitle-index">01</span>
               Выберите начинку
@@ -199,6 +202,9 @@
           </li>
 
           <li class="size order__item">
+            <div class="order__loader">
+                <img class="order__spinner" src="img/spinner.svg" alt="spinner" width="50" height="50">
+            </div>
             <h3 class="order__subtitle">
               <span class="order__subtitle-index">02</span>
               Размер
@@ -245,6 +251,9 @@
           </li>
 
           <li class="appearence order__item">
+            <div class="order__loader">
+              <img class="order__spinner" src="img/spinner.svg" alt="spinner" width="50" height="50">
+            </div>
             <h3 class="order__subtitle">
               <span class="order__subtitle-index">03</span>
               Оформление
@@ -295,7 +304,7 @@
             <button class="btn appearence__ctrl order__ctrl order__ctrl--right"></button>
           </li>
         </ol>
-        <form class="order-form order__form">
+        <form class="order-form order-form--closed order__form">
           <h3 class="order-form__title">Ваш выбор</h3>
           <div class="order-form__wrapper">
             <label class="order-form__label">
