@@ -60,17 +60,11 @@
   line-height: 14.3px;
 }
 
-.feedback__link {
-  color: $red-color;
-  font-style: italic;
-  text-decoration: underline;
-}
-
 .feedback__number {
   @include text(12px);
   position: absolute;
-  right: 2px;
-  top: 166px;
+  right: 22%;
+  bottom: 0;
   color: $red-color;
 }
 
@@ -128,11 +122,6 @@
     margin-top: 10px;
     font-size: 14px;
     line-height: 17px;
-  }
-
-  .feedback__number {
-    right: 13px;
-    top: 165px;
   }
 
   .feedback__dots {

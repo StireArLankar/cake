@@ -5,7 +5,7 @@
 }
 
 .filling__window {
-  margin-top: 18px;
+  margin-top: 30px;
   overflow: hidden;
 }
 
@@ -28,26 +28,35 @@
   background-color: $pink-color;
   position: relative;
   width: 241px;
-  height: 113px;
+  width: 100%;
+  padding-top: 50%;
   overflow: hidden;
 }
 
 .filling__img {
+  min-width: 100%;
   width: auto;
-  height: 80%;
-  flex-shrink: 0;
+  height: 100%;
   position: absolute;
-  top: 50%;
+  bottom: 0;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
 }
 
 .filling__number {
   @include text(12px);
   color: $white-color;
   position: absolute;
-  top: 135px;
-  right: (25 * 100% / 280);
+  margin: 0;
+
+  &--inner {
+    bottom: 10px;
+    right: 10px;
+  }
+
+  &--outer {
+    display: none;
+  }
 }
 
 .filling__description {
@@ -73,7 +82,7 @@
 
 .filling__dots {
   position: absolute;
-  top: 178px;
+  top: 50px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -88,14 +97,9 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .filling {
-    padding-bottom: 57px;
-  }
-
+@media (min-width: $tablet-width + 100px) {
   .filling__window {
-    margin: 29px 20px 0 auto;
-    width: 76.9%;
+    width: 100%;
   }
 
   .filling__item {
@@ -107,14 +111,28 @@
 
   .filling__img-wrapper {
     width: 210px;
+    padding-top: 0;
     height: 239px;
     flex-shrink: 0;
   }
 
+  .filling__img {
+    height: 80%;
+    width: 100%;
+  }
+
   .filling__number {
     color: $black-color;
-    top: 77%;
-    right: 9%;
+
+    &--inner {
+      display: none;
+    }
+
+    &--outer {
+      display: block;
+      top: 77%;
+      right: 9%;
+    }
   }
 
   .filling__description {
@@ -153,19 +171,32 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $base-tablet-width) {
   .filling {
-    padding-bottom: 79px;
+    background: url("../img/appe-ill_@0,5x.png") no-repeat 5% 55%;
+    background-color: $white-color;
   }
 
   .filling__window {
-    margin: 49px 73px 0 auto;
-    width: 72.8%;
+    margin: 29px 20px 0 auto;
+    width: 76.9%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .filling {
+    background: url("../img/appe-ill_@1x.png") no-repeat 3% 60%;
+    background-color: $white-color;
+  }
+
+  .filling__window {
+    margin: 45px 40px 0 auto;
+    width: 75%;
   }
 
   .filling__img-wrapper {
-    width: 44.6%;
-    padding-top: 50.9%;
+    width: 45%;
+    padding-top: 45%;
   }
 
   .filling__number {
@@ -175,7 +206,11 @@
   }
 
   .filling__description {
-    padding: 66px 62px 70px 42px;
+    padding: 0 62px 0 42px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
   }
 
   .filling__title {
@@ -199,7 +234,7 @@
       min-width: 185px;
       font-size: 12px;
       padding: 13px 20px;
-      margin: 53px 0 0;
+      margin: 30px 0 0;
     }
   }
 }

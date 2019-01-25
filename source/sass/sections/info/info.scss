@@ -15,10 +15,15 @@
 
 .info__img-wrapper {
   position: relative;
-  width: 155px;
-  padding-top: 155px;
+  width: 65%;
+  padding-top: 65%;
   border-radius: 50%;
   overflow: hidden;
+
+  @media (max-width: $base-tablet-width - 101px) {
+    margin: 0 auto;
+    transform: translateX(-10%);
+  }
 }
 
 .info__img {
@@ -48,14 +53,14 @@
 .info__text {
   @include text(14px);
   margin: 5px 0 0;
-  line-height: 17px;
+  line-height: 20px;
 }
 
 .info__social {
   @include list;
   position: absolute;
-  top: -6px;
-  right: 46px;
+  top: calc(20% - 85px);
+  right: 20px;
   flex-direction: column;
 }
 
@@ -87,22 +92,31 @@
 }
 
 .info__cite {
+  position: relative;
   display: block;
   margin-top: 15px;
   width: 100px;
   height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   overflow: hidden;
 }
 
 .info__cite-img {
-  width: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
   height: auto;
 }
 
 @media (min-width: $tablet-width) {
+  .info__img-wrapper {
+    width: 325px;
+    padding-top: 325px;
+  }
+}
+
+@media (min-width: $base-tablet-width - 100px) {
   .info {
     padding: 88px calc(27px + #{$padding-tablet}) 0;
   }
@@ -121,14 +135,15 @@
   }
 
   .info__img-wrapper {
-    width: 314 * 100vw / 768;
-    padding-top: 314 * 100vw / 768;
+    width: 314 * 100% / 674;
+    padding-top: 314 * 100% / 674;
     flex-shrink: 0;
-    margin-top: -38px;
+    top: -38px;
+    align-self: flex-end;
   }
 
   .info__text-wrapper {
-    padding: 6px 30px 30px 0;
+    padding: 6px 30px 45px 0;
   }
 
   .info__tagline {
@@ -171,7 +186,7 @@
 
 @media (min-width: $desktop-width) {
   .info {
-    padding: 171px calc(43px + #{$padding-desktop}) 0;
+    padding: 60px calc(43px + #{$padding-desktop}) 0;
   }
 
   .info__title {
@@ -182,11 +197,11 @@
   .info__img-wrapper {
     width: 40%;
     padding-top: 40%;
-    margin-top: -63px;
+    top: -63px;
   }
 
   .info__text-wrapper {
-    padding: 22px 30px 40px 0;
+    padding: 22px 30px 60px 0;
   }
 
   .info__tagline {
@@ -204,6 +219,7 @@
 
   .info__social {
     left: -10px;
+    bottom: 0;
   }
 
   .info__quote {

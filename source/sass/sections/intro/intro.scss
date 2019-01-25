@@ -92,6 +92,7 @@
     order: 4;
     margin-top: 162px;
     display: flex;
+    align-items: center;
     width: 78%;
   }
 
@@ -149,7 +150,7 @@
 }
 
 @media (min-width: $max-desktop-width) {
-  .intro-wrapper {
+  .intro__wrapper {
     max-width: $max-desktop-width;
     padding-left: $padding-desktop-base;
     padding-right: $padding-desktop-base;

@@ -41,7 +41,7 @@
   }
 
   .care__wrapper {
-    padding: 130px calc(27px + #{$padding-tablet}) 126px;
+    padding: 60px calc(27px + #{$padding-tablet}) 126px;
   }
 
   .care__title {
@@ -55,6 +55,12 @@
   .care__text {
     margin-top: 5px;
     padding-right: 52%;
+  }
+}
+
+@media (min-width: $base-tablet-width) {
+  .care__wrapper {
+    padding-top: 130px;
   }
 }
 

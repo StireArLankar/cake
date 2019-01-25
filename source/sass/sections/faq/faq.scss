@@ -69,14 +69,14 @@
   margin: 0;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $base-tablet-width - 100px) {
   .faq {
     &::before {
       background: url("../img/faq_@2x.jpg") no-repeat 0 0;
       width: 867px;
       height: 443px;
       bottom: -50px;
-      left: -193px;
+      left: calc(12% - 200px);
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/faq_@4x.jpg");
@@ -89,7 +89,8 @@
   }
 
   .faq__text-wrapper {
-    width: 500px;
+    max-width: 500px;
+    width: 58%;
     margin-left: auto;
   }
 
@@ -122,7 +123,7 @@
 @media (min-width: $desktop-width) {
   .faq {
     &::before {
-      background-image: url("../img/faq_@2x.jpg");
+      background-image: url("../img/faq_@4x.jpg");
       background-repeat: no-repeat;
       background-position: 50% 50%;
       background-size: cover;
@@ -153,7 +154,7 @@
 
   .faq__item {
     margin-top: 28px;
-    padding-left: 40px;
+    padding-left: 50px;
 
     &::before {
       font-size: 80px;

@@ -59,13 +59,13 @@
   @include text(12px);
   color: $black-color;
   position: absolute;
-  top: 230px;
-  right: 62px;
+  bottom: 10px;
+  right: 10px;
 }
 
 .appearence__dots {
   position: absolute;
-  top: 270px;
+  top: 50px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -77,16 +77,9 @@
 }
 
 @media (min-width: $tablet-width) {
-  .appearence {
-    position: relative;
-    padding-bottom: 5px;
-    background: url("../img/appe-ill_@0,5x.png") no-repeat 2% 63%;
-    background-color: $white-color;
-  }
-
   .appearence__window {
-    width: 70%;
-    margin-left: 25%;
+    width: 100%;
+    margin-left: 0;
     padding-bottom: 10px;
   }
 
@@ -96,6 +89,21 @@
 
   .appearence__item {
     width: 50%;
+  }
+}
+
+@media (min-width: $base-tablet-width) {
+  .appearence {
+    position: relative;
+    padding-bottom: 5px;
+    background: url("../img/appe-ill_@0,5x.png") no-repeat 10% 63%;
+    background-color: $white-color;
+  }
+
+  .appearence__window {
+    width: 70%;
+    margin-left: 25%;
+    padding-bottom: 10px;
   }
 
   .appearence__img-wrapper {
@@ -114,12 +122,6 @@
     font-size: 17px;
     position: absolute;
     bottom: 30px;
-  }
-
-  .appearence__number {
-    position: absolute;
-    top: 85%;
-    right: 4.6%;
   }
 
   .appearence__dots {
@@ -149,8 +151,6 @@
   }
 
   .appearence__number {
-    top: 84%;
-    right: 5.7%;
     font-size: 18px;
   }
 }

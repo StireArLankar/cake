@@ -29,6 +29,11 @@
   stroke: $white-color;
   height: auto;
 
+  @media (min-width: $desktop-width) {
+    fill: $dark-grey;
+    stroke: $dark-grey;
+  }
+
   &--vk {
     stroke-width: 8px;
     width: 100%;
