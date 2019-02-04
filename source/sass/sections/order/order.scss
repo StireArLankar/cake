@@ -35,6 +35,13 @@
   right: 0;
   background-color: darken($pink-color, 10);
   z-index: 10;
+  opacity: 1;
+  transition: opacity 0.5s linear;
+
+  &--fade {
+    z-index: auto;
+    opacity: 0;
+  }
 }
 
 .order__spinner {
